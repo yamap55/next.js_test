@@ -1,13 +1,15 @@
 import Header from '../component/header'
 // import {value} from '../modules/hogehoge'
+import Link from 'next/link'
 
 const Index = props => {
     return (
         <>
-            <Header title={props.title}/>
-            {/* <div>
-                <h1>{value}</h1>
-            </div> */}
+                <Header title={props.title}/>
+                {/* <div>
+                    <h1>{value}</h1>
+                </div> */}
+                <Link href='/'><button>Go home</button></Link>
         </>
     )
 }

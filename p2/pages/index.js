@@ -1,17 +1,14 @@
-// export default () => <div>Welcome to next.js</div>
+import Layout from '../component/my_layout'
+const index = (props) => (
+        <>
+            <Layout title={props.title}/>
+            <dev>
+            </dev>
+        </>
+)
 
-// import React from 'react'
-// export default () => <div>Hello world!</div>
-
-import Link from 'next/link'
-export default function Index() {
-    return (
-        <dev>
-            <h1>Hello Next.js</h1>
-            <ul>
-                <li><Link href='/about'><a>About</a></Link></li>
-                <li><Link href='/cowsay'><a>cowsay</a></Link></li>
-            </ul>
-        </dev>
-    )
+index.getInitialProps = async args => {
+    const title = 'top page'
+    return {title}
 }
+export default index

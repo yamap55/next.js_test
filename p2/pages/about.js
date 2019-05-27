@@ -1,10 +1,16 @@
-import Link from 'next/link'
-
-export default function About() {
+import Layout from '../component/my_layout'
+const About = (props) => {
     return (
-        <dev>
-            <p>This is the about page</p>
-            <Link href='/'><a>Go home</a></Link>
-        </dev>
+        <>
+            <Layout title={props.title}/>
+            <dev>
+            </dev>
+        </>
     )
 }
+
+About.getInitialProps = async args => {
+    const title = 'About'
+    return {title}
+}
+export default About
