@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next --port 34567"
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +19,7 @@
     "apollo-link-http": "^1.5.14",
     "cowsay": "^1.4.0",
     "cowsay-browser": "^1.1.8",
+    "express": "^4.17.1",
     "graphql": "^14.2.1",
     "graphql-tag": "^2.10.1",
     "next": "^8.0.4",
