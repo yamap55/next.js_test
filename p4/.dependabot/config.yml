@@ -1,7 +1,7 @@
 version: 1
 update_configs:
   - package_manager: "javascript"
-    directory: "/"
+    directory: "/p4"
     update_schedule: "daily"
     target_branch: "master"
     default_labels:
